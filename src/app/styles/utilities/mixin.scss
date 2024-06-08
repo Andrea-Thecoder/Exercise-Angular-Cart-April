@@ -1,0 +1,12 @@
+@mixin FlexStandard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin FlexSummaryCart {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}

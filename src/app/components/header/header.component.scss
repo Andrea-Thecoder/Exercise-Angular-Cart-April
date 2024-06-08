@@ -1,0 +1,9 @@
+@use "../../styles/utilities/mixin.scss" as basic; 
+
+
+:host {
+    @include basic.FlexStandard;
+    min-height: 20vh;
+    width: 100%;
+
+}

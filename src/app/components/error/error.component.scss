@@ -1,0 +1,6 @@
+@use "../../styles/utilities/mixin.scss" as mix ;
+:host {
+    @include mix.FlexStandard;
+    flex-direction: column;
+    padding: 1em;
+}

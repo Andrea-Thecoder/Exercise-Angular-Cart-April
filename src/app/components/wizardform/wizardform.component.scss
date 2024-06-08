@@ -1,0 +1,23 @@
+@use '../../styles/utilities/mixin.scss' as mix ;
+
+
+
+.form-flex{
+    margin: 2em;
+    @include mix.FlexStandard;
+    flex-direction: column;
+    gap: 1em;
+    .div-flex{
+        @include mix.FlexStandard;
+        gap: 1em;
+        .flex-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 100%
+            };
+        }
+    }
+}

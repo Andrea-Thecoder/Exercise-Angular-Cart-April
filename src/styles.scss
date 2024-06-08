@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-height: 210px;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+
+    .flex-jc-center {
+        justify-content: center;
+    }
+
+    .flex-ai-center {
+        align-items: center;
+    }
+
+    .flex-direction-column{
+        flex-direction: column;
+    }
+}

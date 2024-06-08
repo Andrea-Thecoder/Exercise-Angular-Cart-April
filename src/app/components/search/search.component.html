@@ -1,0 +1,13 @@
+<section class="container p-1 ">
+
+    <div class="card" style="width: 18rem;" *ngFor="let prodotto of product">
+        <img src={{prodotto.immagine}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{prodotto.nome}}</h5>
+          <p class="card-text">{{prodotto.tipo | capitalize}}</p>
+          <p class="card-text">{{prodotto.descrizione}}</p>
+          <p class="card-text text-success">{{prodotto.prezzo}} €</p>
+          <a href="#" class="btn btn-primary" [routerLink]="['/product/',prodotto.id]">Scheda Tecnica</a>
+        </div>
+      </div>
+</section>

@@ -1,0 +1,44 @@
+@use "../../styles/utilities/mixin.scss" as mix;
+:host {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "list list list list "
+    "... ... ... thrust";
+}
+
+div.list {
+    padding: 1em 3em;
+    grid-area: list;
+    ul {
+        @include mix.FlexStandard;
+        justify-content: start;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 1em;
+        a {
+            color: white;
+            &:hover {
+                color:#ffd700
+            }
+        }
+    }
+}
+
+
+div.rating {
+    grid-area: trust;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    span {
+        
+    font-size: 1.5rem;
+    }
+
+}
+.full {color: #ffd700;}

@@ -1,0 +1,46 @@
+<section>
+    <div>
+        <button type=" button" class="btn btn-primary" [routerLink]="['/product']">Torna ai prodotti</button>
+    </div>
+    <section>
+        <div class="card" style="width: 18rem;" >
+            <img src={{prodotto.immagine}} class="card-img-top" alt="...">
+        </div>
+            <div class="card-body card">
+              <h5 class="card-title">{{prodotto.nome}}</h5>
+              <h6 class="card-text">{{prodotto.marchio}}</h6>
+              <p class="card-text">{{prodotto.tipo | capitalize}}</p>
+              <p class="card-text">{{prodotto.descrizione}}</p>
+              <p class="card-text text-success">{{prodotto.prezzo}} € <span [ngClass]="{'
+                text-success':prodotto.disponibilita,
+                'text-danger':!prodotto.disponibilita}">
+                        {{prodotto.disponibilita ? "Disponibile" : "Non disponibile"}}
+                </span></p>
+                <ul>
+                    <li *ngFor="let key of stKey; let i = index">
+                        {{key.replace("_", " ")}}: {{stValue[i]}}</li>
+                </ul>
+                <div class="select-button">
+                <select class="form-select"  [(ngModel)]="selectOption">
+                    <option 
+                    *ngFor="let nulla of option; let i=index" 
+                    value={{i+1}} >
+                        {{i+1}}
+                    </option>
+                </select>
+                <button class="btn btn-primary" (click)="buy(prodotto)">Acquista</button>  
+                </div>
+                
+            </div>
+    </section>
+    
+      <div>
+        <button type=" button" class="btn btn-primary" [routerLink]="['/product']">Torna ai prodotti</button>
+    </div>
+</section>
+<app-cartpage 
+    [product]="prodotto" 
+    [quantity]="selectOption"
+    (openCartEmitter)="changeOpenCart($event)"
+    *ngIf="openCart">
+</app-cartpage>

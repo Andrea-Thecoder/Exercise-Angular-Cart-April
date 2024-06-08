@@ -1,0 +1,22 @@
+<section>
+    <form [formGroup]="simplyForm" class="form-flex" (submit)="Submit()">
+        <div class="div-flex">
+            <div class="input-group mb-3 flex-input">
+                <span class="text-danger">{{simplyForm.get("nome").value}}</span>
+                <input type="text" class="form-control" placeholder="Nome" formControlName="nome" name="nome">
+              </div>
+              <div class="input-group mb-3 ">
+                <span class="text-danger"></span>            <input type="text" class="form-control" placeholder="Cognome" formControlName="cognome" name="cognome">
+              </div>
+        </div>
+        <div class="div-flex">
+          <div class="input-group mb-3">
+            <span class="text-danger"></span>            <input type="text" class="form-control" placeholder="email" formControlName="email" name="email">
+          </div>
+          <div class="input-group mb-3">
+            <span class="text-danger"></span>            <input type="text" class="form-control" placeholder="Telefono" formControlName="telefono" name="telefono">
+          </div>
+        </div>
+         <button type="submit" class="btn btn-primary">Accedi</button>
+    </form>
+</section>

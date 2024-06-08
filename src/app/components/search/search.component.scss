@@ -1,0 +1,13 @@
+@use "../../styles/utilities/mixin.scss" as mix;
+
+:host {
+    min-height: 50vh;
+    margin: 1em
+}
+
+section {
+    @include mix.FlexStandard;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em 0 ;
+}

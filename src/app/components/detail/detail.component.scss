@@ -1,0 +1,25 @@
+@use "../../styles/utilities/mixin.scss" as mix ;
+:host {
+    margin: 1em;
+    position: relative
+}
+
+section{
+    @include mix.FlexStandard;
+    flex-direction: column;
+    gap: 1.5em;
+    section {
+        flex-direction: row;
+    }
+}
+
+.select-button {
+    gap: 1em;
+    @include mix.FlexStandard;
+    select {
+        width: 50%;
+    }
+    button {
+        width: 50%;
+    }
+}

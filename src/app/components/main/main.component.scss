@@ -1,0 +1,27 @@
+@use "../../styles/utilities/mixin.scss" as mix;
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    div.img-text{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        img {
+            flex-grow: 2 1 1 ;
+            flex-basis: 70%;
+        }
+        div.p {
+            flex-grow: 2 1 1 ;
+            flex-basis: 50%;
+            @include mix.FlexStandard;
+            flex-direction: column;
+
+            .f-05{
+                font-size: 0.5rem;
+            }
+        }
+    }
+   
+}
