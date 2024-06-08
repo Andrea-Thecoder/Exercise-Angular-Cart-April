@@ -1,27 +1,10 @@
-# PopUp
+This exercise was done on my initiative during the basic Angular course in April (Labfortraining). 
+The idea is to simulate an e-commerce website with a worked shopping cart and product search. 
+My focus was on the functionality, so TypeScript.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+I used this exercise to lay the groundwork for creating my shopping cart for the second exam project, which we had to submit on May 21st (see repository: https://github.com/Andrea-Thecoder/AngularFakeE-commerce). 
+This version of the cart is very basic, and the version I ended up using in the exam project is a much improved and more realistic version of this.
 
-## Development server
+Like all my exercises, there's a touch of irony!"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+P.s. remember to start json-server to view the product on webpage.
